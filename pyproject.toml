@@ -1,0 +1,16 @@
+repository = "https://github.com/guardicode/plugin-version-commit-hook"
+
+[project]
+name = "plugin-version-commit-hook"
+version = "v1.0.0"
+description = "A pre-commit hook to synchronize the version number between AgentPluginManifest and pyproject.toml"
+authors = [
+    {name = "Ilija Lazoroski", email = "ilija.lazoroski@gmail.com"}
+]
+license = {text="GPLv3"}
+
+[project.scripts]
+plugin-version-commit-hook = "plugin_version_commit_hook:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]

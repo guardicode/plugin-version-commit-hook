@@ -1,0 +1,7 @@
+- id: plugin-version-commit-hook
+  name: "Plugin version consistency"
+  description: "A pre-commit hook to synchronize the version number between AgentPluginManifest and pyproject.toml"
+  language: python
+  entry: plugin-version-commit-hook
+  stages: [pre-commit]
+  additional_dependencies: ["monkey-types", "pyyaml"]
